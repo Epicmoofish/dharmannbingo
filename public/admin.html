@@ -7,12 +7,12 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
   <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
   <link rel="stylesheet" href="styles/main.css">
-  <title>Spaceman Admin</title>
+  <title>Dhar Admin</title>
 </head>
 
 <body>
   <nav class="navbar navbar-dark fixed-top">
-    <a class="navbar-brand" href="/">Spaceman</a>
+    <a class="navbar-brand" href="/">Dhar</a>
   </nav>
   <div id="adminPage" class="container page-container">
     Create:
@@ -20,7 +20,7 @@
       <div class="col-3"></div>
       <div class="col-6 form-group">
         <label for="createWordInput" class="bmd-label-floating">word</label>
-        <input type="text" class="form-control" id="createWordInput">
+        <textarea type="text" class="form-control" id="createWordInput"></textarea>
       </div>
       <span class="col-3 form-group bmd-form-group">
         <button id="addButton" type="button" class="btn btn-primary">Create</button>
@@ -36,49 +36,6 @@
     </div>
     <div class="row justify-content-center">
       <div id="readAllOutput" class="col text-center">--</div>
-    </div>
-    <hr>
-    Read Single:
-    <div class="row justify-content-center">
-      <div class="col-3"></div>
-      <div class="col-6 form-group">
-        <label for="readIndexInput" class="bmd-label-floating">index</label>
-        <input type="text" class="form-control" id="readIndexInput">
-      </div>
-      <span class="col-3 form-group bmd-form-group">
-        <button id="readSingleButton" type="button" class="btn btn-primary">Read</button>
-      </span>
-    </div>
-    <div class="row justify-content-center">
-      <div id="readSingleOutput" class="col text-center">--</div>
-    </div>
-    <hr>
-    Update:
-    <div class="row justify-content-center">
-      <div class="col-3"></div>
-      <div class="col-3 form-group">
-        <label for="updateIndexInput" class="bmd-label-floating">index</label>
-        <input type="text" class="form-control" id="updateIndexInput">
-      </div>
-      <div class="col-3 form-group">
-        <label for="updateWordInput" class="bmd-label-floating">word</label>
-        <input type="text" class="form-control" id="updateWordInput">
-      </div>
-      <span class="col-3 form-group bmd-form-group">
-        <button id="updateButton" type="button" class="btn btn-primary">Update</button>
-      </span>
-    </div>
-    <hr>
-    Delete:
-    <div class="row justify-content-center">
-      <div class="col-3"></div>
-      <div class="col-6 form-group">
-        <label for="deleteIndexInput" class="bmd-label-floating">index</label>
-        <input type="text" class="form-control" id="deleteIndexInput">
-      </div>
-      <span class="col-3 form-group bmd-form-group">
-        <button id="deleteButton" type="button" class="btn btn-primary">Delete</button>
-      </span>
     </div>
     <hr>
   </div>

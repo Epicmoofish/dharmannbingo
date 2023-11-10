@@ -7,60 +7,63 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
   <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
   <link rel="stylesheet" href="styles/main.css">
-  <title>Spaceman</title>
+  <title>Dhar Bingo</title>
 </head>
-
 <body>
-  <nav class="navbar navbar-dark fixed-top">
-    <a class="navbar-brand" href="#">Spaceman</a>
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="admin.html">Admin Page</a>
-      </li>
-    </ul>
-  </nav>
-  <div id="playerPage" class="container page-container">
-    Word:
-    <div class="row justify-content-center">
-      <div id="displayWord" class="col text-center">____N__</div>
-    </div>
-    <hr>
-    Incorrect Letters:
-    <div class="row justify-content-center">
-      <div id="incorrectLetters" class="col text-center">ABCDFS</div>
-    </div>
-    <hr>
-    <div id="keyboard">
-      <div data-key="A" class="key">A</div>
-      <div data-key="B" class="key">B</div>
-      <div data-key="C" class="key">C</div>
-      <div data-key="D" class="key">D</div>
-      <div data-key="E" class="key">E</div>
-      <div data-key="F" class="key">F</div>
-      <div data-key="G" class="key">G</div>
-      <div data-key="H" class="key">H</div>
-      <div data-key="I" class="key">I</div>
-      <div data-key="J" class="key">J</div>
-      <div data-key="K" class="key">K</div>
-      <div data-key="L" class="key">L</div>
-      <div data-key="M" class="key">M</div>
-      <div data-key="N" class="key">N</div>
-      <div data-key="O" class="key">O</div>
-      <div data-key="P" class="key">P</div>
-      <div data-key="Q" class="key">Q</div>
-      <div data-key="R" class="key">R</div>
-      <div data-key="S" class="key">S</div>
-      <div data-key="T" class="key">T</div>
-      <div data-key="U" class="key">U</div>
-      <div data-key="V" class="key">V</div>
-      <div data-key="W" class="key">W</div>
-      <div data-key="X" class="key">X</div>
-      <div data-key="Y" class="key">Y</div>
-      <div data-key="Z" class="key">Z</div>
-    </div>
-    <button id="newGameButton" type="button" class="d-block ml-auto btn btn-outline-secondary">New Game</button>
-
-  </div>
+    <div style="overflow:hidden; height:100%;" id="main-page" class="container page-container">
+    <table style="height:100%;">
+        <tr height="10%">
+            <th width="20%">B</th>
+            <th width="20%">I</th>
+            <th width="20%">N</th>
+            <th width="20%">G</th>
+            <th width="20%">O</th>
+        </tr>
+        <tr height="16%">
+            <td id="square0">&nbsp;</td>
+            <td id="square1">&nbsp;</td>
+            <td id="square2">&nbsp;</td>
+            <td class="square" id="square3">
+                <div class="bg-color bluesquare"></div>
+                <div class="bg-color greensquare" style="transform: skew(-0.84935rad) translateX(36%); border-right: 1.5px solid rgb(68, 68, 68);"></div>
+                <div class="bg-color redsquare" style="transform: skew(-0.84935rad) translateX(-34%); border-right: 1.5px solid rgb(68, 68, 68);"></div>
+            </td>
+            <td id="square4">&nbsp;</td>
+        </tr>
+        <tr height="16%">
+            <td id="square5">&nbsp;</td>
+            <td id="square6">&nbsp;</td>
+            <td id="square7">&nbsp;</td>
+            <td id="square8">&nbsp;</td>
+            <td id="square9">&nbsp;</td>
+        </tr>
+        <tr height="16%">
+            <td id="square10">&nbsp;</td>
+            <td id="square11">&nbsp;</td>
+            <td id="square12">&nbsp;</td>
+            <td id="square13">&nbsp;</td>
+            <td id="square14">&nbsp;</td>
+        </tr>
+        <tr height="16%">
+            <td id="square15">&nbsp;</td>
+            <td id="square16">&nbsp;</td>
+            <td id="square17">&nbsp;</td>
+            <td id="square18">&nbsp;</td>
+            <td id="square19">&nbsp;</td>
+        </tr>
+        <tr height="16%">
+            <td id="square20">&nbsp;</td>
+            <td id="square21">&nbsp;</td>
+            <td id="square22">&nbsp;</td>
+            <td id="square23">&nbsp;</td>
+            <td id="square24">&nbsp;</td>
+        </tr>
+    </table>
+   
+</div>
+  </body>
+<body>
+  
   <script src="scripts/jquery.min.js"></script>
   <script src="scripts/popper.js"></script>
   <script src="scripts/bootstrap-material-design.js"></script>
