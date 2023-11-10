@@ -10,8 +10,8 @@
   <title>Dhar Bingo</title>
 </head>
 <body>
-    <div style="overflow:hidden; height:100%;" id="main-page" class="container page-container">
-    <table style="height:100%;">
+    <div style="overflow:hidden; height:100%; width:100%; max-width: 100%;" id="main-page" class="container page-container">
+    <table style="height:500px">
         <tr height="10%">
             <th width="20%">B</th>
             <th width="20%">I</th>
@@ -20,43 +20,92 @@
             <th width="20%">O</th>
         </tr>
         <tr height="16%">
-            <td id="square0">&nbsp;</td>
-            <td id="square1">&nbsp;</td>
-            <td id="square2">&nbsp;</td>
+            <td class="square" id="square0">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
+            <td class="square" id="square1">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
+            <td class="square" id="square2">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
             <td class="square" id="square3">
                 <div class="bg-color bluesquare"></div>
                 <div class="bg-color greensquare" style="transform: skew(-0.84935rad) translateX(36%); border-right: 1.5px solid rgb(68, 68, 68);"></div>
                 <div class="bg-color redsquare" style="transform: skew(-0.84935rad) translateX(-34%); border-right: 1.5px solid rgb(68, 68, 68);"></div>
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text">Test</div>
             </td>
-            <td id="square4">&nbsp;</td>
+            <td class="square" id="square4">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
         </tr>
         <tr height="16%">
-            <td id="square5">&nbsp;</td>
-            <td id="square6">&nbsp;</td>
-            <td id="square7">&nbsp;</td>
-            <td id="square8">&nbsp;</td>
-            <td id="square9">&nbsp;</td>
+            <td class="square" id="square5">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
+            <td class="square" id="square6">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
+            <td class="square" id="square7">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
+            <td class="square" id="square8">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
+            <td class="square" id="square9">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
         </tr>
         <tr height="16%">
-            <td id="square10">&nbsp;</td>
-            <td id="square11">&nbsp;</td>
-            <td id="square12">&nbsp;</td>
-            <td id="square13">&nbsp;</td>
-            <td id="square14">&nbsp;</td>
+            <td class="square" id="square10">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
+            <td class="square" id="square11">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
+            <td class="square" id="square12">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
+            <td class="square" id="square13">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
+            <td class="square" id="square14">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
         </tr>
         <tr height="16%">
-            <td id="square15">&nbsp;</td>
-            <td id="square16">&nbsp;</td>
-            <td id="square17">&nbsp;</td>
-            <td id="square18">&nbsp;</td>
-            <td id="square19">&nbsp;</td>
+            <td class="square" id="square15">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
+            <td class="square" id="square16">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
+            <td class="square" id="square17">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
+            <td class="square" id="square18">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
+            <td class="square" id="square19">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
         </tr>
         <tr height="16%">
-            <td id="square20">&nbsp;</td>
-            <td id="square21">&nbsp;</td>
-            <td id="square22">&nbsp;</td>
-            <td id="square23">&nbsp;</td>
-            <td id="square24">&nbsp;</td>
+            <td class="square" id="square20">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
+            <td class="square" id="square21">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
+            <td class="square" id="square22">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
+            <td class="square" id="square23">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
+            <td class="square" id="square24">
+                <div class="vertical-center text-container" style="font-size: 92%;" id="text"></div>
+            </td>
         </tr>
     </table>
    
@@ -68,7 +117,7 @@
   <script src="scripts/popper.js"></script>
   <script src="scripts/bootstrap-material-design.js"></script>
   <script>$("body").bootstrapMaterialDesign();</script>
-  <script src="scripts/main.js"></script>
+  <script type="module" src="scripts/main.js"></script>
 </body>
 
 </html>

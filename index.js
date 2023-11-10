@@ -29,29 +29,4 @@ import { getDatabase, ref, push, set } from "firebase/database";
 const app = express();
 app.use('/', express.static("public"));
     
-app.get('/api/admin/words/', function (req, res) {
-    const db = getFirestore(apper);
-
-    const docRef = doc(db, "dharbingo", "dharbingo");
-    const docSnap = getDoc(docRef);
-    docSnap.then((response)=> {
-
-        let data = response.data().bingosquares;
-        res.send({"words":data, "length":data.length});
-    res.end();
-    });
-    
-});
-app.use('/api/admin/add/', bodyParser.urlencoded({extended: true}));
-app.use('/api/admin/add/', bodyParser.json());
-app.post('/api/admin/add/', function (req, res) {
-    let word = req.body.word;
-    let arr =  word.split("\n");
-    const db = getFirestore(apper);
-
-    const docRef = doc(db, "dharbingo", "dharbingo");
-    let data={"bingosquares":arr};
-    setDoc(docRef, data)
-    res.end();
-});
 app.listen(3000);
